@@ -1,0 +1,35 @@
+@import './chat';
+@import './login';
+@import './menu';
+@import './story';
+@import './ticker';
+
+// Main CSS
+#home {
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: #000;
+
+  &:hover {
+    color: #545454;
+  }
+}
+
+.content__divider {
+  border-bottom: 0.15rem solid #333 !important;
+  padding-bottom: 0.5rem !important;
+  display: inline-block;
+}
+
+.line__separator {
+  height: 2px;
+  width: 6rem;
+  background:#333;
+}
+
+.ui.card>:first-child, .ui.cards>.card>:first-child {
+  border-radius: 0 !important;
+}

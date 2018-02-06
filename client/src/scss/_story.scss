@@ -1,0 +1,93 @@
+// Story CSS
+.story {
+
+}
+
+.story__primary {
+
+}
+
+.story__image--wrapper {
+
+}
+
+.story__image {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.story__category {
+  font-size: .75rem;
+}
+
+.story__header {
+  // &:after {
+  //   position: absolute;
+  //   content: "";
+  //   left: 15px;
+  //   bottom: 230px;
+  //   width: 65px;
+  //   height: 2px;
+  //   background-color: #333;
+  // }
+}
+
+.story__byline {
+  color: #9A9A9A;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+
+  > a {
+    color: #9a9a9a;
+
+    &:hover {
+      color: #444;
+    }
+  }
+}
+
+.story__text {
+  letter-spacing: .05rem;
+  color: #444;
+  font-weight: 400;
+  line-height: 1.5rem
+}
+
+.story__link--wrapper {
+  position: relative;
+  color: #9A9A9A;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.story__link {
+  color: #9a9a9a;
+  position: absolute;
+  top: 1rem
+
+  &:hover, &:focus {
+    color: #222;
+  }
+}
+
+.story__items {
+
+}
+
+.story__item {
+
+}
+
+.story--background {
+
+}
+
+.story__card {
+  border-radius: 0 !important;
+}
+
+.story__card--image {
+  border-radius: 0 !important;
+}

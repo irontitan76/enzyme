@@ -1,0 +1,58 @@
+// Ticker CSS
+$duration: 15s;
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker__segment {
+
+}
+
+.ticker__wrap {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 100% !important; // offset items to begin
+  display: inline;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap; // display items in a line
+  padding-right: 100% !important; // ensure items go before animations repeat (taken from parent due to inline-block)
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+
+  &__item {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+}

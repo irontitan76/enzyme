@@ -1,0 +1,42 @@
+* {
+  border-radius: 0 !important;
+}
+
+#login {
+  height: 100% !important;
+
+}
+
+.login__wrap {
+  background-color: '#007676' !important;
+}
+
+.login__form {
+
+}
+
+.login__header {
+
+}
+
+.login__bg {
+
+}
+
+.login__input, .ui.form * {
+
+}
+
+.login__button {
+
+}
+
+textarea, input {
+  border: none !important;
+  border-bottom: 1px solid #c8c8c8 !important;
+
+  &:focus {
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+  }
+}
